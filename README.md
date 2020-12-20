@@ -34,7 +34,7 @@ QUICK NOTE: The current working directory (i.e. cwd) should always be the root d
 
 11.   Now to test the blog application therse are several request you can perform.
 
-      11.A.] To GET all the blogs [ GET REQUEST ]
+     11.A.] To GET all the blogs [ GET REQUEST ]
 
            http://localhost:5000/blogs
 
@@ -44,17 +44,21 @@ Note: Replace the Port 5000 with your port number and make the request.
 
          http://localhost:5000/blogs?blogTitle=Frida
 
-      11.D.] To GET the blog specify the id of the blog [ GET REQUEST ]
+      11.C.] To GET the blog specify the id of the blog [ GET REQUEST ]
 
          http://localhost:5000/blogs/16082939113615rnahoykiu8o476
 
-      11.C.] To POST the blog ( Creation of the blog ) [ POST REQUEST ]
+      11.D.] To POST the blog ( Creation of the blog ) [ POST REQUEST ]
 
          http://localhost:5000/blogs/
 
 Note: To post the task you need to send the data as the FORM DATA because we are also sending the image of the blog
 
-      11.D.] To DELETE the blog specify the id of the task [ DELETE REQUEST ]
+Here is the example of how to send the data
+![form-data_example](https://user-images.githubusercontent.com/73871063/102726329-ed6ac780-4343-11eb-9a0c-225f842a9868.png)
+
+
+      11.E.] To DELETE the blog specify the id of the task [ DELETE REQUEST ]
 
          http://localhost:5000/blogs/16082955456835rnaiivkiu9n590
 
