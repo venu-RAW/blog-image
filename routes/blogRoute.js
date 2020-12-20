@@ -13,7 +13,12 @@ const multer = require("multer");
 let storage = multer.diskStorage({
 	destination: "./images",
 	filename: function (req, file, cb) {
-		cb(null, new Date().toISOString() + path.extname(file.originalname));
+		cb(
+			null,
+			new Date().toISOString() +
+				file.originalname.split(".")[0] +
+				path.extname(file.originalname)
+		);
 	},
 });
 
